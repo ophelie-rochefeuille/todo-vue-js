@@ -1,5 +1,7 @@
-console.log('app', Vue)
+import Vue from 'vue'
+import TodoApp from './TodoApp.vue'
 
-const app = new Vue({
-  el: '#app'
-})
+new Vue({
+  render: h => h(TodoApp),
+}).$mount('#todo')
+
